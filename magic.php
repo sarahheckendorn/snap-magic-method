@@ -41,8 +41,6 @@ class People {
 	 * @throws \Exception if age is greater than 118
 	 */
 	public function setAge($age): int {
-		if(empty($newAge) === true) {
-			throw(new \InvalidArgumentException("Age cannot be empty"));
 			if($newAge < 0) {
 				throw(new \InvalidArgumentException("must be greater than 0"));
 			} if($newAge <= 18) {
